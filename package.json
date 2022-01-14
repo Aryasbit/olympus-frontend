@@ -156,12 +156,12 @@
     "extends": "react-app"
   },
   "scripts": {
-    "build": "GENERATE_SOURCEMAP=false react-scripts build",
-    "eject": "react-scripts eject",
-    "start": "react-scripts start",
-    "test": "react-scripts test",
-    "test:unit": "react-scripts test --testPathPattern=\"(\\.|/|-)unit\\.(test|spec)\\.[jt]sx?$\" --runInBand --watchAll=false --detectOpenHandles --bail --ci --coverage --no-cache",
-    "test:e2e": "react-scripts test --testPathPattern=\"(\\.|/|-)e2e\\.(test|spec)\\.[jt]sx?$\" --testTimeout=30000 --runInBand --watchAll=false --detectOpenHandles",
+    "build": "GENERATE_SOURCEMAP=false react-scripts --openssl-legacy-provider build",
+    "eject": "react-scripts --openssl-legacy-provider eject",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "test": "react-scripts --openssl-legacy-provider test",
+    "test:unit": "react-scripts --openssl-legacy-provider test --testPathPattern=\"(\\.|/|-)unit\\.(test|spec)\\.[jt]sx?$\" --runInBand --watchAll=false --detectOpenHandles --bail --ci --coverage --no-cache",
+    "test:e2e": "react-scripts --openssl-legacy-provider test --testPathPattern=\"(\\.|/|-)e2e\\.(test|spec)\\.[jt]sx?$\" --testTimeout=30000 --runInBand --watchAll=false --detectOpenHandles",
     "lint": "eslint --config ./.eslintrc.js --ignore-path ./.eslintignore ./src/",
     "surge": "surge ./build",
     "ship": "yarn surge",
